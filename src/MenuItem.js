@@ -107,7 +107,6 @@ const styles = StyleSheet.create({
     },
     categoryLabel:{
         backgroundColor: 'white',
-       // width: 110,
         paddingHorizontal: 15,
         marginRight: 12,
         borderRadius: 18,
@@ -118,8 +117,5 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.2,
         shadowRadius: 3,
         elevation: 2,
-    },
-    categoryText:{
-       
     }
 })
