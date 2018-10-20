@@ -26,16 +26,7 @@ export default class MenuItem extends Component {
       }
       const enterStyles = {transform:[{translateX : this.state.translate}]}
     return (
-        <Animated.View style={[enterStyles, dynStyle, {
-            backgroundColor: 'transparent',
-            height: 36,
-            width: 160,
-            flexDirection: 'row',
-            justifyContent: 'flex-end',
-            right: 20 + 11,
-            position: 'absolute',
-            
-        }]}>
+        <Animated.View style={[enterStyles, dynStyle, styles.wrapper]}>
             <TouchableOpacity style={styles.categoryItem} onPress={onItemPressed(pressData)}>
                 <View style={styles.categoryLabel}>
                     <Text style={styles.categoryText}>
@@ -87,6 +78,15 @@ MenuItem.propTypes = {
 }
 
 const styles = StyleSheet.create({
+    wrapper:{
+        backgroundColor: 'transparent',
+        height: 36,
+        width: 160,
+        flexDirection: 'row',
+        justifyContent: 'flex-end',
+        right: 20 + 11,
+        position: 'absolute',
+    },
     categoryItem:{
         position: 'absolute',
         flexDirection: 'row',
