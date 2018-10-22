@@ -47,7 +47,7 @@ export default class MenuItem extends Component {
   }
 
   enter = () =>{
-      Animated.timing(this.state.translate, {
+      Animated.spring(this.state.translate, {
         toValue: 0,
         duration: 200,
         delay: (50 * (this.props.index)),
